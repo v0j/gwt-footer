@@ -8,10 +8,8 @@
 // TODO: obsfucate the codes
 
 
-// TODO: first find the gwt-standard-footer id.
-// then retrieve the content of the footer-source.html
 (function(d, footerID){
-	function httpGet(theUrl, responseCallback) {
+	function httpGet(theUrl, responseCallback, footerSource) {
 	    // code for IE7+, Firefox, Chrome, Opera, Safari
 	    if (window.XMLHttpRequest) {
 	        xmlhttp=new XMLHttpRequest();
@@ -32,10 +30,14 @@
 	    xmlhttp.send();    
 	}
 
+	// first find the gwt-standard-footer id.
 	footer = d.getElementById(footerID);
 
-	httpGet('http://localhost/gwt-footer/footer-source.html', function(test){
+	// NOTE: this source code is for foundation 5 implementation only
+	// then retrieve the content of the footer-source.html
+	httpGet(footerSource, function(test){
 		footer.innerHTML = test;
 	});
 
-}(document, 'gwt-standard-footer'));
+// local source http://localhost/gwt-footer/footer-source.html
+}(document, 'gwt-standard-footer', 'https://gwt-footer.googlecode.com/git/footer-source.html'));
