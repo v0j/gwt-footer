@@ -8,8 +8,8 @@
 // TODO: obsfucate the codes
 
 
-(function(d, footerID){
-	function httpGet(theUrl, responseCallback, footerSource) {
+(function(d, footerID, footerSource){
+	function httpGet(theUrl, responseCallback) {
 	    // code for IE7+, Firefox, Chrome, Opera, Safari
 	    if (window.XMLHttpRequest) {
 	        xmlhttp=new XMLHttpRequest();
