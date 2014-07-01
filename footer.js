@@ -8,7 +8,7 @@
 // TODO: obsfucate the codes
 
 
-(function(d, footerID, footerSource){
+(function(d, footerID){
 	function httpGet(theUrl, responseCallback) {
 	    // code for IE7+, Firefox, Chrome, Opera, Safari
 	    if (window.XMLHttpRequest) {
@@ -35,8 +35,12 @@
 
 	// NOTE: this source code is for foundation 5 implementation only
 	// then retrieve the content of the footer-source.html
-	httpGet('https://gwt-footer.googlecode.com/git/footer-source.html', function(test){
-		footer.innerHTML = test;
+	//httpGet('http://localhost/gwt-footer/footer-source.json', function(test){
+	httpGet('https://gwt-footer.googlecode.com/git/footer-source.json', function(test){
+		console.log(test);
+		var text = JSON.parse(test);
+		console.log(text);
+		footer.innerHTML = text.gwt_standard_footer;
 	});
 
 // local source http://localhost/gwt-footer/footer-source.html
