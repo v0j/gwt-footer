@@ -35,9 +35,9 @@
 
 	// NOTE: this source code is for foundation 5 implementation only
 	// then retrieve the content of the footer-source.html
-	httpGet(footerSource, function(test){
+	httpGet('https://gwt-footer.googlecode.com/git/footer-source.html', function(test){
 		footer.innerHTML = test;
 	});
 
 // local source http://localhost/gwt-footer/footer-source.html
-}(document, 'gwt-standard-footer', 'https://gwt-footer.googlecode.com/git/footer-source.html'));
+}(document, 'gwt-standard-footer'));
