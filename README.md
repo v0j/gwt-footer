@@ -7,7 +7,7 @@ The gwt-footer is a footer script generator for GWT template. The main purpose o
 This version is Alpha only and experimental and shoud **NOT** be used on production. There might be changes in the future.
 
 ### How to add footer source
-- Add a this syntax at to your template. **Note** that gwt-standard-footer id is where the standard footer will embed, so rename your footer container id to "gwt-standard-footer".
+- Add a this syntax at to your template.
 
 ```
 <div id="gwt-standard-footer">
@@ -22,6 +22,7 @@ This version is Alpha only and experimental and shoud **NOT** be used on product
 }(document, 'script', 'gwt-footer-jsdk'));
 </script>
 ```
+- **Note** that gwt-standard-footer id is where the standard footer will embed, so rename your footer container id to "gwt-standard-footer".
 
 ###### CHANGE LOGS
 **06-25-2014**
