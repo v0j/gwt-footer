@@ -33,3 +33,6 @@ This version is Alpha only and experimental and shoud **NOT** be used on product
 **07-01-2014**
 - added automated script that generates template from source code
 - added embed script sample to index.html for sample
+
+**07-29-2014**
+- added autoresizer script
