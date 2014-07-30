@@ -3,6 +3,7 @@
 <meta http-equiv="Cache-Control" content="private" />
 <meta http-equiv="Expires" content="86400000" />
 <meta http-equiv="Cache-Control" content="max-age=86400000" />
+<base target="_parent" />
 
 <link type="text/css" rel="stylesheet" href="foundation/normalize.css">
 <link type="text/css" rel="stylesheet" href="foundation/foundation.min.css">
@@ -77,7 +78,7 @@
 		var init = function(){
 			window.dispatchEvent(new Event('resize'));
 		}
-	    var checkLoad = function() {
+		var checkLoad = function() {
 			document.readyState !== "complete" ? setTimeout(checkLoad, 11) : init();   
 		};
 
