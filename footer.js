@@ -11,11 +11,7 @@
  * Government(PH) Website template footer generator script file
  * @author voltz jeturian voltz
  */
-// NOTE: must use native js coding
 // TODO: obsfucate the codes
-
-// TODO: must create an iframe element
-// TODO: must create a time cache to save bandwidth of gwt-footer CDN
 (function(d, f){
 	footer = d.getElementById(f);
 	footer.innerHTML = '<iframe src="https://gwt-footer.googlecode.com/git/footer-source.html" id="footer-gwt-frame" width="100%" scrolling="no" style="border: 0;" ></iframe';
@@ -24,14 +20,7 @@
 	iFrameResize({
 		autoResize: true,
 		enablePublicMethods     : true,
-		checkOrigin: false,
-		resizedCallback: function(messageData){ // Callback fn when resize is received
-			// console.log('iframe id = '+ messageData.iframe.id);
-			// console.log('message data = '+ messageData.height);
-		},
-		initCallback: function(){
-
-		}
+		checkOrigin: false
 	}, '#footer-gwt-frame');
 
 }(document, 'gwt-standard-footer'));
