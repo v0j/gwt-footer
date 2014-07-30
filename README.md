@@ -12,14 +12,16 @@ This version is Alpha only and experimental and shoud **NOT** be used on product
 ```
 <div id="gwt-standard-footer">
 </div>
-<script>(function(d, s, id) {
-  var js, gjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//gwt-footer.googlecode.com/git/footer.js";
-  //js.src = "http://localhost/gwt-footer/footer.js";
-  gjs.parentNode.insertBefore(js, gjs);
-}(document, 'script', 'gwt-footer-jsdk'));
+<script>
+    (function(d, s, id) {
+      var js, gjs = d.getElementById('gwt-standard-footer');
+
+      js = d.createElement(s); js.id = id;
+      js.src = "http://gwt-footer.googlecode.com/git/footer.js";
+      // js.src = "http://localhost/gwt-footer/footer.js";
+      gjs.parentNode.insertBefore(js, gjs);
+
+    }(document, 'script', 'gwt-footer-jsdk'));
 </script>
 ```
 - **Note** that gwt-standard-footer id is where the standard footer will embed, so rename your footer container id to "gwt-standard-footer".

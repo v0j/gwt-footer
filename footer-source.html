@@ -66,12 +66,23 @@
 	(function(d, f){
 		var fc;
 		fc = d.getElementById(f);
-		// console.log(fc);
-		console.log(fc.clientHeight);
+		// console.log(fc.clientHeight);
 		window.onresize = function(event) {
-		    if ('parentIFrame' in window) window.parentIFrame.size(fc.clientHeight);
+		    resetSize();
 		};
-	})(document, 'standard-footer');
+		var resetSize = function(){
+			if ('parentIFrame' in window) window.parentIFrame.size(fc.clientHeight);
+		}
+
+		var init = function(){
+			window.dispatchEvent(new Event('resize'));
+		}
+	    var checkLoad = function() {
+			document.readyState !== "complete" ? setTimeout(checkLoad, 11) : init();   
+		};
+
+		checkLoad(); 
+	}(document, 'standard-footer'));
 	</script>
 </body>
 </html>

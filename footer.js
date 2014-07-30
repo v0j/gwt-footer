@@ -16,17 +16,21 @@
 
 // TODO: must create an iframe element
 // TODO: must create a time cache to save bandwidth of gwt-footer CDN
-(function(d, footerID){
-	footer = d.getElementById(footerID);
-	footer.innerHTML = '<iframe src="https://gwt-footer.googlecode.com/git/footer-source.html" width="100%" style="border: 0; "></iframe';
-	// footer.innerHTML = '<iframe src="http://localhost/gwt-footer/footer-source.html" id="footer-gwt-frame" width="100%" scrolling="no" style="border: 0;" ></iframe';
+(function(d, f){
+	footer = d.getElementById(f);
+	// footer.innerHTML = '<iframe src="https://gwt-footer.googlecode.com/git/footer-source.html" id="footer-gwt-frame" width="100%" scrolling="no" style="border: 0;" ></iframe';
+	footer.innerHTML = '<iframe src="http://localhost/gwt-footer/footer-source.html" id="footer-gwt-frame" width="100%" scrolling="no" style="border: 0;" ></iframe';
 
 	iFrameResize({
 		autoResize: true,
-		enablePublicMethods     : true,  
+		enablePublicMethods     : true,
+		checkOrigin: false,
 		resizedCallback: function(messageData){ // Callback fn when resize is received
-			console.log('iframe id = '+ messageData.iframe.id);
-			console.log('message data = '+ messageData.height);
+			// console.log('iframe id = '+ messageData.iframe.id);
+			// console.log('message data = '+ messageData.height);
+		},
+		initCallback: function(){
+
 		}
 	}, '#footer-gwt-frame');
 
@@ -82,3 +86,4 @@
 		footer.innerHTML = test;
 	});
 }(document, 'gwt-standard-footer'));
+*/
