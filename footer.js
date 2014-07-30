@@ -1,4 +1,4 @@
-/*! iFrame Resizer (iframeSizer.min.js ) - v2.5.2 - 2014-07-17
+/** iFrame Resizer (iframeSizer.min.js ) - v2.5.2 - 2014-07-17
  *  Desc: Force cross domain iframes to size to content.
  *  Requires: iframeResizer.contentWindow.min.js to be loaded into the target frame.
  *  Copyright: (c) 2014 David J. Bradshaw - dave@bradshaw.net
@@ -18,8 +18,8 @@
 // TODO: must create a time cache to save bandwidth of gwt-footer CDN
 (function(d, footerID){
 	footer = d.getElementById(footerID);
-	//footer.innerHTML = '<iframe src="https://gwt-footer.googlecode.com/git/footer-source.html" style="border: 0; width: 100%; height: 100%;"></iframe';
-	footer.innerHTML = '<iframe src="http://localhost/gwt-footer/footer-source.html" id="footer-gwt-frame"width="100%" scrolling="no" style="border: 0;" ></iframe';
+	footer.innerHTML = '<iframe src="https://gwt-footer.googlecode.com/git/footer-source.html" width="100%" style="border: 0; "></iframe';
+	// footer.innerHTML = '<iframe src="http://localhost/gwt-footer/footer-source.html" id="footer-gwt-frame" width="100%" scrolling="no" style="border: 0;" ></iframe';
 
 	iFrameResize({
 		autoResize: true,
@@ -82,4 +82,3 @@
 		footer.innerHTML = test;
 	});
 }(document, 'gwt-standard-footer'));
-*/
