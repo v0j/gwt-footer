@@ -14,9 +14,9 @@
 // TODO: obsfucate the codes
 (function(d, fid){
 	var f = d.getElementById(fid);
-	f.innerHTML = '<iframe src="https://gwt-footer.googlecode.com/git/footer-source.html" id="footer-gwt-frame" width="100%" scrolling="no" style="border: 0;" ></iframe';
+	f.innerHTML = '<iframe src="https://gwt-footer.googlecode.com/git/footer-source.html" id="footer-gwt-frame" width="100%" scrolling="no" style="border: 0;" ></iframe>';
+	// footer.innerHTML = '<iframe src="http://localhost/gwt-footer/footer-source.html" id="footer-gwt-frame" width="100%" scrolling="no" style="border: 0;" ></iframe>';
 	var i = d.getElementById('footer-gwt-frame');
-	// footer.innerHTML = '<iframe src="http://localhost/gwt-footer/footer-source.html" id="footer-gwt-frame" width="100%" scrolling="no" style="border: 0;" ></iframe';
 
 	i.style.marginBottom = '-3px';
 	
