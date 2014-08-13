@@ -4,10 +4,10 @@
 The gwt-footer is a footer script generator for GWT template. The main purpose of having a footer generator is to provide a uniform feel and enforce the guideline of the standard footer. The footer generator automatically retrieves the updated version of html codes of the footer template to ensure that the contents and the links are up to date.
 
 ##Note
-This version is Alpha only and experimental and shoud **NOT** be used on production. There might be changes in the future.
+This version is **BETA** only and experimental and shoud be tested on a development server before releasing for the production server. For support, comments, suggestions, and if you found any bugs, please email us at **gwtsupport@i.gov.ph**
 
 ### How to add footer source
-- Add a this syntax at to your template.
+Add a this syntax to your template.
 
 ```
 <div id="gwt-standard-footer">
@@ -18,13 +18,12 @@ This version is Alpha only and experimental and shoud **NOT** be used on product
 
       js = d.createElement(s); js.id = id;
       js.src = "http://gwt-footer.googlecode.com/git/footer.js";
-      // js.src = "http://localhost/gwt-footer/footer.js";
       gjs.parentNode.insertBefore(js, gjs);
 
     }(document, 'script', 'gwt-footer-jsdk'));
 </script>
 ```
-- **Note** that gwt-standard-footer id is where the standard footer will embed, so rename your footer container id to "gwt-standard-footer".
+**Note** that gwt-standard-footer id is where the standard footer will embed, so rename your footer container id to "gwt-standard-footer".
 
 ###### CHANGE LOGS
 **06-25-2014**
