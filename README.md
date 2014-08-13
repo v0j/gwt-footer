@@ -7,7 +7,7 @@ The gwt-footer is a footer script generator for GWT template. The main purpose o
 This version is **BETA** only and experimental and shoud be tested on a development server before releasing for the production server. For support, comments, suggestions, and if you found any bugs, please email us at **gwtsupport@i.gov.ph**
 
 ### How to add footer source
-Add a this syntax to your template.
+Add this syntax to your template.
 
 ```
 <div id="gwt-standard-footer">
