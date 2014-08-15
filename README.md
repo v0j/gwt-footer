@@ -37,3 +37,6 @@ To add the footer generator on your template, simply add this syntax to your tem
 
 **07-29-2014**
 - added autoresizer script
+
+**08-13-2014**
+- release to Beta version
