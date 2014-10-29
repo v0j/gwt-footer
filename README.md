@@ -42,3 +42,6 @@ For support, comments, and suggestions, and if you find any bugs, please email u
 
 **08-13-2014**
 - release to Beta version
+
+**10-29-2014**
+- release to Stable version
