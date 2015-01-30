@@ -88,6 +88,7 @@
 				var event=document.createEventObject();
 				element.fireEvent("onresize",event);
 			}
+			resetSize();
 		}
 		var checkLoad = function() {
 			document.readyState !== "complete" ? setTimeout(checkLoad, 11) : init();   
