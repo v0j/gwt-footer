@@ -69,13 +69,14 @@
 	(function(d, f){
 		var fc;
 		fc = d.getElementById(f);
+		var resetSize = function(){
+			if ('parentIFrame' in window) window.parentIFrame.size(fc.clientHeight);
+		}
+		
 		// console.log(fc.clientHeight);
 		window.onresize = function(event) {
 		    resetSize();
 		};
-		var resetSize = function(){
-			if ('parentIFrame' in window) window.parentIFrame.size(fc.clientHeight);
-		}
 
 		var init = function(){
 			if (document.createEvent) { // W3C
